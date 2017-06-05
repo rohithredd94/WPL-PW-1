@@ -18,7 +18,7 @@ body{
 	background-color: white;
 	color: #404040;
 	font-size: 11pt;
-	font-family: Georgia, Garamond, "sans-serif";
+	font-family: Georgia, Garamond, "serif";
 }
 a{
 	color: #A4A400;
@@ -26,4 +26,7 @@ a{
 blockquote{
 	background-color: yellow;
 	font-style: italic;
+}
+pre{
+	font-family: monospace;
 }
