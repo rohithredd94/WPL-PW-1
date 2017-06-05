@@ -11,4 +11,11 @@ h1{
 h2{
 	text-align: left;
 	font-size: 18pt;
+	font-weight: bold;
+}
+body{
+	background-color: white;
+	color: #404040;
+	font-size: 11pt;
+	font-family: Georgia, Garamond, "sans-serif";
 }
