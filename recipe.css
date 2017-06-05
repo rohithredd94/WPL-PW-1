@@ -7,12 +7,13 @@ h1, h2 {
 h1{
 	text-align: center;
 	font-size: 22pt;
+	font-weight: bold;
 }
 h2{
 	text-align: left;
 	font-size: 18pt;
-	font-weight: bold;
 }
+
 body{
 	background-color: white;
 	color: #404040;
@@ -24,4 +25,5 @@ a{
 }
 blockquote{
 	background-color: yellow;
+	font-style: italic;
 }
