@@ -1,5 +1,5 @@
 header,footer{
-	background-color: grey;
+	background-color: DarkGray;
 	padding: 15pt;
 }
 header{
@@ -7,8 +7,7 @@ header{
 }
 header h1,footer h4{
 	color: white;
-	text-align: center;
-	font-family: "Times New Roman";
+	text-align: center;	
 	margin: 10px 0;
 	font-weight: bold;
 }
@@ -16,6 +15,7 @@ header h1,footer h4{
 html, body {
     margin: 2pt;
     padding: 0;
+    font-family: "Times New Roman";
 }
 .col-lg-3{
 	border-right: 1px solid #333;
@@ -26,20 +26,22 @@ html, body {
 }
 ul{
 	list-style-type: none;
+	font-size: 15pt;
 }
 a{
 	color: blue;
 }
 .btn-primary, .btn-primary:visited{
-    background-color: black !important;
+    background-color: #404040 !important;
     outline: none !important;
     border-width: 0px;
+    font-size: 15pt;
 }
 .btn-primary:hover{
-	background-color: blue !important;
+	background-color: #426FCA !important;
     outline: none !important;
     border-width: 0px;
 }
 .buttons{
-	background-color: black;
+	background-color: #404040;
 }
