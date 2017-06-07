@@ -1,0 +1,26 @@
+header,footer{
+	background-color: grey;
+	padding: 15pt;
+}
+header{
+	padding: 25pt;
+}
+header h1,footer h4{
+	color: white;
+	text-align: center;
+	font-family: "Times New Roman";
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+html, body {
+    margin: 2pt;
+    padding: 0;
+}
+.col-lg-3{
+	border-right: 1px solid #333;
+	padding-top: 50px;
+}
+ul{
+	list-style-type: none;
+}
