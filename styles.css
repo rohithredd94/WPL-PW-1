@@ -19,8 +19,27 @@ html, body {
 }
 .col-lg-3{
 	border-right: 1px solid #333;
-	padding-top: 50px;
+	padding-top: 40px;
+}
+.col-lg-9{
+	padding-top: 20px;
 }
 ul{
 	list-style-type: none;
+}
+a{
+	color: blue;
+}
+.btn-primary, .btn-primary:visited{
+    background-color: black !important;
+    outline: none !important;
+    border-width: 0px;
+}
+.btn-primary:hover{
+	background-color: blue !important;
+    outline: none !important;
+    border-width: 0px;
+}
+.buttons{
+	background-color: black;
 }
