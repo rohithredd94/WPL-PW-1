@@ -57,11 +57,9 @@ p{
 }
 .buttons{
 	background-color: #404040;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 5px;
+	padding: 5px;
 	margin-right: 15px;
-	
+	margin-left: 5px;
 }
 #pad{
 	padding-top: 40px;
@@ -69,4 +67,8 @@ p{
 #header{
 	color: white;
 	text-decoration: none;
+}
+#London, #Paris, #Tokyo{
+	margin-right: 15px;
+	margin-left: 5px;
 }
