@@ -10,18 +10,27 @@ header h1,footer h4{
 	text-align: center;	
 	margin: 10px 0;
 	font-weight: bold;
-}
 
+}
+h2{
+	font-weight: bold;
+	color: black;
+}
 html, body {
     margin: 2pt;
     padding: 0;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", Helvetica, Arial, "sans-serif";
 }
-.col-lg-3{
-	border-right: 1px solid #333;
+body{
+	border: 1px solid DimGray;
+}
+.col-lg-2{
+	
 	padding-top: 40px;
+	padding-left: 0px;
 }
-.col-lg-9{
+.col-lg-10{
+	border-left: 1px solid DimGray;
 	padding-top: 20px;
 }
 ul{
@@ -29,13 +38,14 @@ ul{
 	font-size: 15pt;
 }
 a{
-	color: blue;
+	color: purple;
 }
 .btn-primary, .btn-primary:visited{
     background-color: #404040 !important;
     outline: none !important;
     border-width: 0px;
     font-size: 15pt;
+    font-weight: bold;
 }
 .btn-primary:hover{
 	background-color: #426FCA !important;
@@ -44,4 +54,12 @@ a{
 }
 .buttons{
 	background-color: #404040;
+	padding: 5px;
+}
+p{
+	font-size: 14pt;
+	color: black;
+}
+#pad{
+	padding-top: 40px;
 }
