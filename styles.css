@@ -13,28 +13,16 @@ header h1,footer h4{
 	text-align: center;	
 	margin: 10px 0;
 	font-weight: bold;
-
 }
 h2{
 	font-weight: bold;
 	color: black;
 }
-html, body {
-    margin: 2pt;
+body {
+    margin: 4pt;
     padding: 0;
     font-family: "Times New Roman", Helvetica, Arial, "sans-serif";
-}
-body{
-	border: 1px solid DimGray;
-}
-.col-lg-2{
-	
-	padding-top: 40px;
-	padding-left: 0px;
-}
-.col-lg-10{
-	border-left: 1px solid DimGray;
-	padding-top: 20px;
+    border: 1px solid DimGray;
 }
 ul{
 	list-style-type: none;
@@ -42,6 +30,18 @@ ul{
 }
 a{
 	color: purple;
+}
+p{
+	font-size: 14pt;
+	color: black;
+}
+.col-lg-2{
+	padding-top: 40px;
+	padding-left: 0px;
+}
+.col-lg-10{
+	border-left: 1px solid DimGray;
+	padding-top: 20px;
 }
 .btn-primary, .btn-primary:visited{
     background-color: #404040 !important;
@@ -59,10 +59,10 @@ a{
 	background-color: #404040;
 	padding: 5px;
 }
-p{
-	font-size: 14pt;
-	color: black;
-}
 #pad{
 	padding-top: 40px;
+}
+#header{
+	color: white;
+	text-decoration: none;
 }
