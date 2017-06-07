@@ -5,6 +5,9 @@ header,footer{
 header{
 	padding: 25pt;
 }
+h1{
+	font-size: 31pt;
+}
 header h1,footer h4{
 	color: white;
 	text-align: center;	
