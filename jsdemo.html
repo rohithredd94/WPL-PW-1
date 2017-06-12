@@ -7,9 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="jsdemo.css">
 </head>
 <body>
-	<p>Username: <input type="text" name="Username" id="username"></p>
-	<p>Password: <input type="password" name="Password" id="password"></p>
-	<p>Phone Number: <input type="Number" name="Phone Number" id="phone"></p>
+	<h2>Please enter your credentials</h2>
+	<p id="info">All input fields are mandatory</p>
+	<p>Username: <input type="text" name="Username" id="username" placeholder="Enter username"></p>
+	<p>Password: <input type="password" name="Password" id="password" placeholder="Enter password"></p>
+	<p>Phone Number: <input type="Number" name="Phone Number" id="phone" placeholder="Enter phone number"></p>
 	<button type="button" id="button">Validate</button>
 	<p id="output" class="error"></p>
 </body>

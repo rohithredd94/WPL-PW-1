@@ -4,3 +4,6 @@
 .success{
 	color: green;
 }
+#info{
+	font-style: italic;
+}
