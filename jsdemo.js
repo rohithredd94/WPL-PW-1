@@ -10,7 +10,8 @@ function validate() {
    		output.innerHTML = "Success";
    		output.className = "success";
    	}else{
-   		output.innerHTML = "Error";
+   		output.innerHTML = "Error: You should enter values for all input fields";
+   		output.className = "error";
    	}
 }
 window.onload = pageLoad;
