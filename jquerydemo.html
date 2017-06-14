@@ -12,16 +12,24 @@
 				var passwordlength = $("#password").val().length;
 				var phonelength = $("#phone").val().length;
 				if(usernamelength < 6){
-					$("#output").append("Username must be atleast 6 characters long");
-					$("#output").value += "\n\n";
+					$("#output").removeClass("success");
+					$("#output").addClass("error");
+					$("#output").append("Error: Username must be atleast 6 characters long<br>");
 				}
 				if(passwordlength < 6){
-					$("#output").append("Password must be atleast 6 characters long");
-					this.value += '\n\n';
+					$("#output").removeClass("success");
+					$("#output").addClass("error");
+					$("#output").append("Error: Password must be atleast 6 characters long<br>");
 				}
-				if(phonelength == 0){
-					$("#output").append("Please Enter a valid phone number");
-					this.value += '\n\n';
+				if(isNaN($("#phone").val()) || phonelength == 0){
+					$("#output").removeClass("success");
+					$("#output").addClass("error");
+					$("#output").append("Error: Please Enter a valid phone number");
+				}
+				if(usernamelength > 6 && passwordlength > 6 && phonelength > 0){
+					$("#output").removeClass("error");
+					$("#output").addClass("success");
+					$("#output").append("Success");
 				}
 			});
 		});
@@ -42,7 +50,7 @@
 	<p id="info">All input fields are mandatory</p>
 	<p>Username: <input type="text" name="Username" id="username" placeholder="Enter username"></p>
 	<p>Password: <input type="password" name="Password" id="password" placeholder="Enter password"></p>
-	<p>Phone Number: <input type="number" name="Phone Number" id="phone" placeholder="Enter phone number"></p>
+	<p>Phone Number: <input type="text" name="Phone Number" id="phone" placeholder="Enter phone number"></p>
 	<button type="button" id="button">Validate</button>
 	<p id="output" class="error"></p>
 </body>
