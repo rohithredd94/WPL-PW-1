@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#output").text("");
+				var usernamelength = $("#username").val().length;
+				var passwordlength = $("#password").val().length;
+				var phonelength = $("#phone").val().length;
+				if(usernamelength < 6){
+					$("#output").append("Username must be atleast 6 characters long");
+					$("#output").value += "\n\n";
+				}
+				if(passwordlength < 6){
+					$("#output").append("Password must be atleast 6 characters long");
+					this.value += '\n\n';
+				}
+				if(phonelength == 0){
+					$("#output").append("Please Enter a valid phone number");
+					this.value += '\n\n';
+				}
+			});
+		});
+	</script>
+	<style type="text/css">
+		.success{
+			background-color: green;
+			color: white;
+		}
+		.error{
+			background-color: red;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h2>Please enter your credentials</h2>
+	<p id="info">All input fields are mandatory</p>
+	<p>Username: <input type="text" name="Username" id="username" placeholder="Enter username"></p>
+	<p>Password: <input type="password" name="Password" id="password" placeholder="Enter password"></p>
+	<p>Phone Number: <input type="number" name="Phone Number" id="phone" placeholder="Enter phone number"></p>
+	<button type="button" id="button">Validate</button>
+	<p id="output" class="error"></p>
+</body>
+
+</html>
