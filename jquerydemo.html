@@ -14,24 +14,16 @@
 				var passwordlength = $("#password").val().length;
 				var phonelength = $("#phone").val().length;
 				if(usernamelength < 6){
-					output.removeClass("success");
-					output.addClass("error");
-					output.append("Error: Username must be atleast 6 characters long<br>");
+					output.removeClass("success").addClass("error").append("Error: Username must be atleast 6 characters long<br>");
 				}
 				if(passwordlength < 6){
-					output.removeClass("success");
-					output.addClass("error");
-					output.append("Error: Password must be atleast 6 characters long<br>");
+					output.removeClass("success").addClass("error").append("Error: Password must be atleast 6 characters long<br>");
 				}
 				if(isNaN($("#phone").val()) || phonelength == 0){
-					output.removeClass("success");
-					output.addClass("error");
-					output.append("Error: Please enter a valid phone number");
+					output.removeClass("success").addClass("error").append("Error: Please enter a valid phone number");
 				}
 				else if(usernamelength >= 6 && passwordlength >= 6 && phonelength > 0){
-					output.removeClass("error");
-					output.addClass("success");
-					output.append("Success");
+					output.removeClass("error").addClass("success").append("Success");
 				}
 			});
 		});
