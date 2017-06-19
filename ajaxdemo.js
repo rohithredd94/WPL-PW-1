@@ -10,14 +10,15 @@ function loadData() {
 			alert("file is loaded");
 			$(data).find('bookstore').each(function(){
 				$(data).find('book').each(function(){
+					var cat = $(this).attr("category")
 					var title = $(this).find("title").text();
 					var year = $(this).find("year").text();
 					var price = $(this).find("price").text();
 					var authors = "";
-					$(data).find('author').each(function(){
-						authors = authors + $(this).text();
-						alert(authors);
+					$(this).find('author').each(function(){
+						authors = authors + $(this).text();	
 					})
+					console.log(cat);
 				})
 					
 			})
