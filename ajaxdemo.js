@@ -7,7 +7,15 @@ function loadData() {
 		url: "books.xml",
 		dataType: "xml",
 		success: function(data){
-			alert("file is loaded");
+			console.log("file is loaded");
+			var output = "<tr>";
+			output += '<th>Title</th>';
+			output += '<th>Author(s)</th>';
+			output += '<th>Category</th>';
+			output += '<th>Year</th>';
+			output += '<th>Price</th>';
+			output += '</tr>';
+			$("#demo").append(output);
 			$(data).find('bookstore').each(function(){
 				$(data).find('book').each(function(){
 					var cat = $(this).attr("category")
@@ -15,16 +23,23 @@ function loadData() {
 					var year = $(this).find("year").text();
 					var price = $(this).find("price").text();
 					var authors = "";
+					var output = "<tr>";
 					$(this).find('author').each(function(){
-						authors = authors + $(this).text();	
+						authors = authors +$(this).text() + ', ';	
 					})
-					console.log(cat);
-				})
-					
+					authors = authors.replace(/,\s*$/, "");
+					output += '<td>'+title+'</td>';
+					output += '<td>'+authors+'</td>';
+					output += '<td>'+cat+'</td>';
+					output += '<td>'+year+'</td>';
+					output += '<td>'+price+'</td>';
+					output += '</tr>';
+					$("#demo").append(output);
+				})		
 			})
 		},
 		error: function(){
-			alert("error loading file");
+			console.log("error loading file");
 		}
 	});
 }
