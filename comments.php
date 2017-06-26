@@ -1,10 +1,13 @@
 <?php
 	error_reporting(E_ALL);
 	ini_set('display_errors', 1);
+  $err = "";
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-  	echo "Name: ".test_input($_POST["name"])."<br>";
-
+    if (empty($_POST["name"])) {
+      $err = "This is a required field";
+    } else {
+  	 echo "Name: ".test_input($_POST["name"])."<br>";
+    }
   	echo "Email: ".test_input($_POST["email"])."<br>";
 
     echo "Website: ".test_input($_POST["website"])."<br>";
