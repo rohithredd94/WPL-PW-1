@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	if(!isset($_SESSION['sess_name']) || !isset($_SESSION['sess_username']) || !isset($_SESSION['sess_password'])){
+	if(!isset($_SESSION['sess_name']) || !isset($_SESSION['sess_username'])){
 		header('Location: login.html');
 		exit();
 	}
