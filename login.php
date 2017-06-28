@@ -7,9 +7,6 @@
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-  	/*echo "Name: ".test_input($_POST["name"])."<br>";
-  	echo "Username: ".test_input($_POST["username"])."<br>";
-    echo "Password: ".test_input($_POST["password"])."<br>";*/
     if (!empty($_POST["name"]) && !empty($_POST["username"]) && !empty($_POST["password"])) {
 
       $_SESSION['sess_name'] = test_input($_POST["name"]);
