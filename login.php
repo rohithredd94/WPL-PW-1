@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
     $con = mysqli_connect("localhost","root","root","pw8",3310);
     $x = 1;
@@ -32,6 +33,13 @@
             if($password != $userdata['password']){
                 echo "Incorrect password";
                 header('Location: login.html');
+            }else{
+                session_regenerate_id();
+                $_SESSION['username'] = $userdata['username'];
+                $_SESSION['fullname'] = $userdata['fullname'];
+                $_SESSION['avatar'] = $userdata['avatar'];
+                session_write_close();
+                header('Location: welcome.php');
             }
         }else{
             echo "Input fields missing";
