@@ -1,0 +1,74 @@
+header,footer{
+	background-color: DarkGray;
+	padding: 15pt;
+}
+header{
+	padding: 25pt;
+}
+h1{
+	font-size: 31pt;
+}
+header h1,footer h4{
+	color: white;
+	text-align: center;	
+	margin: 10px 0;
+	font-weight: bold;
+}
+h2{
+	font-weight: bold;
+	color: black;
+}
+body {
+    margin: 4pt;
+    padding: 0;
+    font-family: "Times New Roman", Helvetica, Arial, "sans-serif";
+    border: 1px solid DimGray;
+}
+ul{
+	list-style-type: none;
+	font-size: 15pt;
+}
+a{
+	color: purple;
+}
+p{
+	font-size: 14pt;
+	color: black;
+}
+.col-lg-2{
+	padding-top: 40px;
+	padding-left: 0px;
+}
+.col-lg-10{
+	border-left: 1px solid DimGray;
+	padding-top: 20px;
+}
+.btn-primary, .btn-primary:visited{
+    background-color: #404040 !important;
+    outline: none !important;
+    border-width: 0px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+.btn-primary:hover{
+	background-color: #426FCA !important;
+    outline: none !important;
+    border-width: 0px;
+}
+.buttons{
+	background-color: #404040;
+	padding: 5px;
+	margin-right: 15px;
+	margin-left: 5px;
+}
+#pad{
+	padding-top: 40px;
+}
+#header{
+	color: white;
+	text-decoration: none;
+}
+#London, #Paris, #Tokyo{
+	margin-right: 15px;
+	margin-left: 5px;
+}
