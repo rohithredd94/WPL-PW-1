@@ -1,0 +1,29 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>PHP Demo</title>
+	<style>
+		.required{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h2>PHP Demo</h2>
+	<p class="required">* required field.</p>
+	<form method="post" action="comments.php">
+		Name: <input type="text" name="name" id="name" required><span class="required"> *</span><br><br>
+
+		Email: <input type="text" name="email" id="email" required><span class="required"> *</span><br><br>
+
+		Website: <input type="text" name="website" id="website"><br><br>
+		
+		Comments: <textarea type="text" name="comments" id="comments" rows="7" cols="30"></textarea><br><br>
+
+		Gender: <input type="radio" name="gender" id="female" value="female" required>Female
+			<input type="radio" name="gender" id="male" value="male">Male<span class="required"> *</span><br><br>
+
+		<input type="submit" name="submit" value="Submit"> 
+	</form>
+</body>
+</html>
