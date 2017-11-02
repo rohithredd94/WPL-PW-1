@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 README.txt
 PW1_Screenshot.pdf
 rxk152130-PW1.zip
@@ -17,6 +18,8 @@ README.txt
 rxk152130-PW3.zip
 >>>>>>> main3
 =======
+=======
+>>>>>>> main5
 # Prerequisites
 *.d
 
@@ -69,9 +72,15 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+<<<<<<< HEAD
 
 rxk152130-PW4.zip
 README.txt
 PW4_Screenshot_1.png
 PW4_Screenshot_2.png
 >>>>>>> main4
+=======
+README.txt
+PW5_Screenshot.png
+rxk152130-PW5.zip
+>>>>>>> main5
